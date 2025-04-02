@@ -423,7 +423,7 @@
             const botMessageDiv = document.createElement('div');
             botMessageDiv.className = 'chat-message bot';
             // Replace \n with <br> for line breaks
-            botMessageDiv.innerHTML = (Array.isArray(responseData) ? responseData[0].output : responseData.output).replace(/\n/g, '<br>');
+            botMessageDiv.innerHTML = (Array.isArray(responseData) ? responseData[0].output : responseData.output).replace(/\n/g, '<br> <br>');
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
         } catch (error) {
